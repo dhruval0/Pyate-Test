@@ -32,7 +32,7 @@ logger = logging.getLogger(__name__)
 
 @app.get("/")
 def orchtel_home():
-    return {"Welcome to": "Orchtel AI"}
+    return {"Welcome to": "Test AI"}
 
 
 @app.post("/process-document/v1", dependencies=[Depends(get_token_header)])
